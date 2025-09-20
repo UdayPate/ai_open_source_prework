@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+    display: block;
+    cursor: crosshair;
+    /* Canvas will be sized by JavaScript to fill the browser window */
+}
+
+/* Add some visual effects */
+body {
+    background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Add a subtle glow effect to the canvas */
+#gameCanvas {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    border-radius: 5px;
+}
